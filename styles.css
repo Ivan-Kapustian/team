@@ -139,6 +139,9 @@ body {
   .container {
     max-width: 768px;
   }
+  .footer {
+    padding-top: 80px;
+  }
   .footer-flex {
     margin-bottom: 152px;
   }
