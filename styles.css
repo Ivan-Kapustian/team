@@ -198,5 +198,9 @@ body {
   }
   .footer {
     padding-top: 104px;
+    padding-bottom: 32px;
+  }
+  .footer-flex {
+    margin-bottom: 174px;
   }
 }
