@@ -196,4 +196,7 @@ body {
   .container {
     max-width: 1280px;
   }
+  .footer {
+    padding-top: 104px;
+  }
 }
