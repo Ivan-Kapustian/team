@@ -105,6 +105,10 @@ body {
   display: flex;
   gap: 14px;
 }
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+}
 .footer-social-logo {
   padding: 8px;
   width: 40px;
@@ -169,6 +173,10 @@ body {
   }
   .footer-social-list {
     gap: 16px;
+  }
+  .footer-social-item {
+    width: 44px;
+    height: 44px;
   }
   .footer-social-logo {
     width: 44px;
