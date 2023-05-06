@@ -63,6 +63,14 @@ body {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+.footer-logo {
+  width: 40px;
+  height: 40px;
+}
+.footer-logo-link {
+  display: block;
+  width: 40px;
+}
 .footer-contacts-tel {
   margin-bottom: 20px;
 }
@@ -71,13 +79,30 @@ body {
   flex-direction: column;
   gap: 14px;
 }
+.footer-contacts-tel {
+  display: block;
+}
 .footer-tel {
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   text-transform: uppercase;
   color: #ffffff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-tel:hover,
+.footer-tel:focus,
+.footer-adr:hover,
+.footer-adr:focus,
+.footer-navi-link:hover,
+.footer-navi-link:focus,
+.footer-policy:hover,
+.footer-policy:focus,
+.footer-terms:hover,
+.footer-terms:focus {
+  color: #35734d;
 }
 .footer-adr {
   font-style: normal;
@@ -87,7 +112,9 @@ body {
   letter-spacing: -0.02em;
   text-transform: capitalize;
   color: #ffffff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .footer-navi-link {
   font-style: normal;
   font-weight: 400;
@@ -95,6 +122,7 @@ body {
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   color: #ffffff;
 }
@@ -117,6 +145,34 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 10px;
 }
+.footer-social-logo:hover {
+  animation: wiggle 2s linear infinite;
+}
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
 .footer-copyright {
   font-weight: 400;
   font-size: 12px;
@@ -132,12 +188,14 @@ body {
   letter-spacing: -0.02em;
   color: #c6cdd1;
   margin-right: 14px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-terms {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
   color: #c6cdd1;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -151,6 +209,13 @@ body {
   }
   .footer-address {
     margin-bottom: 0;
+  }
+  .footer-logo {
+    width: 50px;
+    height: 50px;
+  }
+  .footer-logo-link {
+    width: 50px;
   }
   .footer-navi-list {
     gap: 18px;
